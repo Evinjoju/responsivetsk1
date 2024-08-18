@@ -1,0 +1,356 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+body,
+html {
+    overflow-x: hidden;
+}
+
+header {
+    width: 100vw;
+    height: 40vw;
+    background-image: url("https://images.pexels.com/photos/2104152/pexels-photo-2104152.jpeg?cs=srgb&dl=clouds-cold-dawn-2104152.jpg&fm=jpg");
+    background-position: bottom;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#header {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem 10%;
+    background: transparent;
+    z-index: 1;
+}
+
+.logo {
+    font-size: 2.4rem;
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+#check {
+    display: none;
+}
+
+.icons {
+    font-size: 2.4rem;
+    color:cyan;
+    font-weight: 800;
+    position: absolute;
+    right: 5%;
+    cursor: pointer;
+    display: none;
+}
+
+.navbar a {
+    font-size: 1.15rem;
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+    margin-left: 2.5rem;
+    
+
+}
+.navbar{
+    display: flex;
+   
+    
+    
+    padding-right: 400px;
+
+}
+
+.headerContent {
+    margin-top: 100px;
+    color:white;
+    text-align: center;
+}
+
+.headerContent h2 {
+    font-size: 4vmin;
+}
+
+.line {
+    width: 150px;
+    height: 4px;
+    background-color:white;
+    margin: 10px auto;
+    border-radius: 5px;
+}
+
+.headerContent h1 {
+    font-size: 7vmin;
+    margin-top: 0px;
+    margin-bottom: 30px;
+}
+
+.but {
+    padding: 8px 15px;
+    background:rgb(27, 112, 112);
+    border-radius: 30px;
+    color: whitesmoke;
+}
+section {
+    width: 80%;
+    margin: 80px auto;
+}
+
+.title {
+    text-align: center;
+    font-size: 4vmin;
+    color:rgb(20, 85, 85);
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.row .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.events .row {
+    margin-top: 50px;
+}
+
+
+h4 {
+    font-size: 3vmin;
+    margin: 0px 40px;
+}
+
+p {
+    color: black;
+    padding: 0px 50px;
+}
+
+.events .but {
+    margin-top: 30px;
+}
+
+.explore {
+    width: 100%;
+    height: 80vh;
+    background-image: url('https://imgs.search.brave.com/PxT7bcQfyiTjldlbOSHymB97pIFF2fR_rO-HMoUoXxg/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy85/LzliL1doYW0tYV9k/aWZmZXJlbnRfY29y/bmVyLmpwZw');
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 60%;
+    padding: 20px;
+    color:white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.explore h1 {
+    font-size: 7vmin;
+    margin: 40px;
+}
+
+.explore .but {
+    margin-top: 40px;
+}
+
+.explore .line {
+    margin-bottom: 40px;
+    
+}
+.explore p{
+    color: aliceblue;
+}
+
+.tours .imagegallary {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+}
+
+.imagegallary img {
+    max-width: 350px;
+    margin: 5px;
+}
+
+.contentcol {
+    width: 40%;
+}
+
+.imgcol {
+    width: 60%;
+}
+
+.contentcol h1 {
+    font-size: 7vmin;
+    color: black;
+}
+
+.contentcol .line {
+    margin-left: -1px;
+}
+
+.contentcol p {
+    padding: 0;
+    margin: 30px auto;
+    
+    
+}
+
+.contentcol .but {
+    margin-left: -100px;
+}
+
+.footer {
+    width: 100%;
+    min-height: 200px;
+    padding: 20px 80px;
+    margin: 0;
+    background-color: rgb(20, 85, 85);
+    text-align: center;
+}
+
+.footer p {
+    color: whitesmoke;
+    margin: 20px auto;
+}
+
+.connect {
+    color: whitesmoke;
+}
+img {
+    transition: transform .3s ease;
+}
+img:hover{
+    transform: scale(1.05);
+}
+.but:hover{
+    background-color: whitesmoke;
+    color: rgb(20, 85, 85);
+    box-shadow: 2px 2px 5px black;
+}
+a:hover{
+    text-decoration: underline;
+}
+
+/* navbar */
+@media (max-width:760px) {
+    .icons {
+        display: flex;
+    }
+
+    #closeIcon {
+        display: none;
+    }
+
+    #check:checked~.icons #menuIcon {
+        display: none;
+    }
+
+    #check:checked~.icons #closeIcon {
+        display: block;
+    }
+
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color:rgb(20, 85, 85);
+        display: none;
+    }
+
+    #check:checked~.navbar {
+        display: block;
+    }
+
+    .navbar a {
+        display: block;
+        text-align: center;
+        font-size: 1.1rem;
+        margin: 1.5rem 0px;
+    }
+
+    .headerContent {
+        margin-top: 130px;
+    }
+
+    .headerContent h1 {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    /* events */
+    .row {
+        flex-direction: column;
+    }
+
+    .eventimg {
+        max-width: 90%;
+        margin: 20px auto;
+    }
+
+    .explore {
+        width: 100%;
+    }
+
+    .content h1 {
+        font-size: 35px;
+        margin-top: 50;
+    }
+
+    /* tours */
+
+    .tours .col {
+        width: 100%;
+    }
+
+    .imagegallary {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .con {
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentcol .but {
+        margin-left: 0px;
+        margin-bottom: 20px;
+    }
+    .contentcol h1 {
+        text-align: center;
+    }
+    .contentcol .line {
+        margin-left: 110px;
+    }
+    
+    .contentcol p {
+        padding: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    
+
+}
