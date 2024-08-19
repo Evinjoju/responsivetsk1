@@ -101,6 +101,10 @@ header {
     border-radius: 30px;
     color: whitesmoke;
 }
+.eventimg{
+    margin-bottom: 9px;
+    border-radius: 50%;
+}
 section {
     width: 80%;
     margin: 80px auto;
@@ -191,6 +195,7 @@ p {
 .imagegallary img {
     max-width: 350px;
     margin: 5px;
+    border-radius: 50%;
 }
 
 .contentcol {
